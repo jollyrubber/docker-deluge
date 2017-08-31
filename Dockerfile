@@ -8,7 +8,8 @@ RUN apt-get update && \
     apt-get install -y \
                     --no-install-recommends \
                     deluged \
-                    deluge-webui && \
+                    deluge-webui \
+                    ffmpeg && \
     apt-get clean && \
     chmod +x entrypoint.sh
 
